@@ -1,10 +1,18 @@
-# ⚙️ My Dotfiles
+# My dotfiles
 
-Dotfiles to keep my development environment consistent across machines.
+Configs to keep shell and terminal setup consistent across machines.
 
----
+## Requirements
 
-## 🧰 What's Included
+- `git` (for cloning Oh My Zsh on first install)
+- `zsh` (included on macOS; install via your package manager on Linux)
+- Network access the first time, so `install.sh` can clone Oh My Zsh
 
-- 🐠 Fish shell config
-- 🔧 Ghostty config
+## Install
+
+From this repo’s directory:
+
+```bash
+chmod +x install.sh
+./install.sh
+```
