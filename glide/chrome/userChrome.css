@@ -1,0 +1,31 @@
+:root {
+  --glide-font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --glide-font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* {
+  font-family: var(--glide-font-mono) !important;
+}
+
+#glide-toolbar-mode-button.glide-mode-button,
+#glide-toolbar-keyseq-button.glide-keyseq-button {
+  font-family: var(--glide-font-mono) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.02em !important;
+  color: var(--glide-chrome-fg) !important;
+  border-radius: var(--glide-radius-sm) !important;
+}
+
+#glide-toolbar-mode-button.glide-mode-button::after {
+  height: 3px !important;
+  border-radius: 2px !important;
+  background: linear-gradient(
+    90deg,
+    var(--glide-current-mode-color, var(--glide-mode-normal)),
+    color-mix(in srgb, var(--glide-current-mode-color, var(--glide-mode-normal)) 55%, white)
+  ) !important;
+  opacity: 0.95;
+}
+
+#glide-toolbar-keyseq-button.glide-keyseq-button {
+  color: var(--glide-chrome-fg-muted) !important;
+}
