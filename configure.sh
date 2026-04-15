@@ -26,6 +26,11 @@ echo "Linking Ghostty config..."
 mkdir -p "${CONFIG_HOME}/ghostty"
 ln -sf "${DOTFILES}/ghostty/config" "${CONFIG_HOME}/ghostty/config"
 
+echo "Linking Glide config..."
+mkdir -p "${CONFIG_HOME}/glide"
+ln -sf "${DOTFILES}/glide/glide.ts" "${CONFIG_HOME}/glide/glide.ts"
+ln -sf "${DOTFILES}/glide/tsconfig.json" "${CONFIG_HOME}/glide/tsconfig.json"
+
 echo "Done."
 if [[ "${SHELL:-}" != */zsh ]]; then
   echo "Optional: set zsh as default login shell: chsh -s \"$(command -v zsh)\""
